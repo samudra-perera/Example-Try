@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html{
+    /* font-family: 'Montserrat'; We can change this later  */
+}
+
+section {
+    background-color: rgb(8, 10, 46);
+}
