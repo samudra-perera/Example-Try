@@ -11,4 +11,68 @@ html{
 
 section {
     background-color: rgb(8, 10, 46);
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background-color: rgb(24, 25, 28);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.display {
+    height: 100px;
+    background-color: grey;
+    text-align: right;
+    font-size: 30px;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.display-calculation {
+    font-size: 18px;
+    opacity: .7;
+    overflow: hidden;
+    height: 20px;
+}
+
+.display-temp {
+    position: absolute;
+    left: 10;
+    font-size: 20px;
+    opacity: .4;
+}
+
+.all-buttons {
+    color: white;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+}
+
+.button {
+    border: .25px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.number.btn-0 {
+    grid-column: 1/3;
 }
